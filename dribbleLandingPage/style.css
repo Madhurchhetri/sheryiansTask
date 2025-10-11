@@ -1,0 +1,373 @@
+@font-face {
+    font-family: heading;
+    src: url(./Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+@font-face {
+    font-family: normal;
+    src: url(./WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: black;
+    color: white; */
+    font-family: normal;
+    
+}
+i{
+    cursor:  pointer !important;
+}
+main{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 100px 100px 150% 80% 60% 50% 20% 40%;
+    grid-template-areas: "header header header header"
+                         " hero-heading hero-heading hero-heading hero-heading"
+                         "topbar-left topbar-left topbar-right topbar-right"
+                         "hero-image hero-image hero-image hero-image"
+                         "hero-text hero-text hero-text hero-text"
+                         "sommo-section sommo-section sommo-section sommo-section"
+                         "galleryImage1 galleryImage2 galleryImage3 galleryImage4"
+                         "like-follower like-follower like-follower like-follower"
+                         "footer footer footer footer"  ;
+
+}
+header{
+    width: 100%;
+    grid-area: header;
+    padding: 0 10px;
+    
+}
+header nav{
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+header nav .logo{
+    width: 5%;
+    text-align: right;
+}
+header nav .search{
+    width: 35%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #f3f3f6;
+}
+header nav .search input{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+header nav .search .searchIcon{
+    font-size: 18px;
+    padding:  5px;
+    border-radius: 50px;
+    background-color: #ea4c89;
+    color: #fff;
+}
+header nav .menu{
+    width: 25%;
+
+}
+header nav .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header nav .menu ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+header nav .user{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px; 
+}
+.user figure{
+    width: 20%;
+    height: 20%;
+}
+.user figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.hero-heading{
+    grid-area: hero-heading;
+    display: flex;
+    justify-content: flex-sta0rt;
+    align-items: center;
+    padding: 0 0 0 110px;
+    font-family: heading;
+}
+.topbar-left{
+    grid-area: topbar-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.topbar-left figure{
+    width: 10%;
+    height: 70%;
+    border-radius: 30%;
+}
+.topbar-left figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      border-radius: 50%;
+}
+.topbar-left a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.topbar-right{
+    grid-area:  topbar-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.topbar-right button{
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.hero-image{
+    grid-area: hero-image; 
+    /* display: grid;
+    place-items:  center ; */
+    margin: 20px 0;
+    padding: 0 100px;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+.hero-text{
+    grid-area: hero-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    font-size: 30px;
+    padding: 0 100px;
+    margin-bottom: 50px;
+}
+.sommo-section{
+   grid-area: sommo-section ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 50px 0 !important;
+   padding: 20px;
+  
+}
+.sommo-section .parent{
+     display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sommo-section .left-border{
+    width: 250px;
+    border-bottom: 2px solid #e7e7e9;
+}.sommo-section .right-border{
+    width: 250px;
+    border-bottom: 2px solid #e7e7e9;
+}
+.sommo-section p{
+    font-size: 28px;
+      margin: 20px 0;
+}
+.sommo-section button{
+  
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+ .sommo-section .bottom-text{
+    margin: 20px 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .sommo-section .bottom-text  button{
+    background-color: transparent;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.galleryImage1{
+    grid-area: galleryImage1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.card-parent{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card figure{
+    width: 100%;
+    height: 100%;
+}
+.card figure img{
+    width: 100%;
+    height: 100%;
+}
+.card-footer{
+    width: 100%;
+    height: 40%;
+   background: linear-gradient(transparent,black);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -40%;
+    gap: 10px;
+    transition: all ease .5s;
+}
+.card:hover .card-footer{
+    bottom: 0%;
+}
+.card-footer h3{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 22px;
+}
+.card-footer i{
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50px;
+}
+.galleryImage2{
+    grid-area: galleryImage2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/* .galleryImage2 img{
+    object-fit: cover;
+} */
+.galleryImage3{
+    grid-area: galleryImage3;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galleryImage4{
+    grid-area: galleryImage4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+.like-follower{
+    grid-area: like-follower;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.like-follower button{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+    cursor: pointer;
+}
+/* .followere{
+    grid-area: followere;
+} */
+.footer{
+    grid-area: footer;
+    padding: 20px;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer ul li{
+    list-style: none;
+    text-transform: capitalize;
+}
+.top-footer{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.top-footer .footer-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.top-footer .footer-menu ul li{
+    list-style: none;
+    text-transform: capitalize;
+}
+.footer .bottom-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}

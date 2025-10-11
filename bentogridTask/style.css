@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 30% 30% 20% 70% 20% 20% 20% 40% 40% 40% 50% ;
+    grid-template-areas: "header header header header"
+                         "hero-heading hero-textButton hero-textButton hero-textButton"
+                         "hero-bottom hero-bottom hero-bottom hero-bottom"
+                         "counter1 counter2 counter3 counter4"
+                         "about-text about-text about-image about-image"
+                         "expertise expertise expertise-text expertise-text"
+                         "image1 image2 image3 image4"
+                         "image5 image6 image7 image8"
+                         "milestone-image milestone-image milestone-text milestone-text"
+                         "logopisum-text logopisum-text logopisum-image logopisum-image"
+                         "contact-text contact-text contact-map contact-map"
+                         "footer-col-1 footer-col-2 footer-col-3 footer-col-4";
+    /* gap: 10px;   */
+    overflow: auto;  
+    text-align: center ;
+    padding: 10px;
+   
+    
+                    
+}
+header{
+    grid-area: header;
+    display: grid;
+    place-items: center;
+    background-color: rgba(163, 163, 218, 0.849);
+}
+#hero-heading{
+    grid-area: hero-heading;
+    display: grid;
+    place-items: center;
+        background-color: hsl(0, 0%, 90%);
+}
+#hero-textButton{
+    grid-area: hero-textButton;
+    display: grid;
+    place-items: center;
+        background-color: hsl(0, 0%, 90%);
+}
+#hero-bottom{
+    grid-area: hero-bottom;
+    display: grid;
+    place-items: center;
+        background-color: hsl(0, 0%, 90%);
+}
+.counter1{
+    grid-area: counter1;
+    display: grid;
+    place-items: center;
+    background-color: rgba(250, 250, 66, 0.774);
+}
+.counter2{
+    grid-area: counter2;
+    display: grid;
+    place-items: center;
+    background-color: rgba(250, 250, 66, 0.774);
+}
+.counter3{
+    grid-area: counter3;
+    display: grid;
+    place-items: center;
+    background-color: rgba(250, 250, 66, 0.774);
+}
+.counter4{
+    grid-area: counter4;
+    display: grid;
+    place-items: center;
+    background-color: rgba(250, 250, 66, 0.774);
+}
+.about-text{
+    grid-area: about-text;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+.about-image{
+    grid-area: about-image;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+.expertise{
+    grid-area: expertise;
+    display: grid;
+    place-items: center;
+    background-color: darkgrey;
+}
+.expertise-text{
+    grid-area: expertise-text;
+    display: grid;
+    place-items: center;
+    background-color: darkgrey;
+}
+.image1{
+    grid-area: image1;
+    display: grid;
+    place-items: center;
+    background-color: rgba(231, 12, 12, 0.897);
+}
+.image2{
+    grid-area: image2;
+    display: grid;
+    place-items: center;
+    background-color: rgba(230, 230, 69, 0.884);
+}
+.image3{
+    grid-area: image3;
+    display: grid;
+    place-items: center;
+    background-color: rgba(231, 12, 12, 0.897);
+}
+.image4{
+    grid-area: image4;
+    display: grid;
+    place-items: center;
+     background-color: rgba(230, 230, 69, 0.884);
+}
+.image5{
+    grid-area: image5;
+    display: grid;
+    place-items: center;
+    background-color: rgba(230, 230, 69, 0.884);
+    
+}
+.image6{
+    grid-area: image6;
+    display: grid;
+    place-items: center;
+     background-color: rgba(231, 12, 12, 0.897);
+}
+.image7{
+    grid-area: image7;
+    display: grid;
+    place-items: center;
+        background-color: rgba(230, 230, 69, 0.884);
+}
+.image8{
+    grid-area: image8;
+    display: grid;
+    place-items: center;
+    background-color: rgba(231, 12, 12, 0.897);
+ 
+}
+.milestone-image{
+    grid-area: milestone-image;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+.milestone-text{
+    grid-area: milestone-text;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+.logopisum-text{
+    grid-area: logopisum-text ;
+    display: grid;
+    place-items: center;
+    background-color: rgba(250, 250, 66, 0.774);
+}
+.logopisum-image{
+    grid-area: logopisum-image;
+    display: grid;
+    place-items: center;
+    background-color: rgba(250, 250, 66, 0.774);
+}
+.contact-text{
+    grid-area: contact-text;
+    display: grid;
+    place-items: center;
+     background-color: hsl(0, 0%, 90%);
+}
+.contact-map{
+    grid-area: contact-map;
+    display: grid;
+    place-items: center;
+     background-color: hsl(0, 0%, 90%);
+}
+.footer-col-1{
+    grid-area: footer-col-1;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: #fff;
+}
+.footer-col-2{
+    grid-area: footer-col-2;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: #fff;
+}
+.footer-col-3{
+    grid-area: footer-col-3;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: #fff;
+}
+.footer-col-4{
+    grid-area: footer-col-4;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: #fff;
+}
