@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+main .top .icon {
+  width: 10%;
+}
+main .top .icon span {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: aqua;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .top .icon span i {
+  font-size: 2rem;
+}
+main .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .counter h2 {
+  font-size: 3rem;
+}
+main .counter .buttons {
+  display: flex;
+  gap: 2rem;
+}
+main .counter .buttons button {
+  padding: 2rem 4rem;
+  border: 1px solid #000;
+  border-radius: 10rem;
+  font-size: 2rem;
+  background-color: transparent;
+}/*# sourceMappingURL=style.css.map */
