@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+h1 {
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+main ul li {
+  list-style: none;
+  background-color: #fff;
+  padding: 5rem 1rem;
+  width: 0.8rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+main ul li.active {
+  scale: 0.9;
+  background-color: rgb(255, 215, 0); /* Optional highlight */
+  transition: 0.1s;
+}/*# sourceMappingURL=style.css.map */
