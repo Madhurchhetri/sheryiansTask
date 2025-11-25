@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  background: linear-gradient(to right bottom, rgb(25, 25, 25), rgb(30, 30, 30), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+main .card-allReel {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  width: 350px;
+  height: 100vh;
+  margin: auto;
+  border-radius: 2rem;
+}
+main .card-allReel .reel {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+main .card-allReel .reel video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+  filter: brightness(60%);
+}
+main .card-allReel .reel .muted {
+  position: absolute;
+  bottom: 35rem;
+  right: 0.2rem;
+  padding: 1.2rem;
+  border-radius: 5rem;
+  background-color: rgba(0, 0, 0, 0.5882352941);
+  cursor: pointer;
+}
+main .card-allReel .reel .muted i {
+  pointer-events: none;
+}
+main .card-allReel .reel .bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.322);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+main .card-allReel .reel .bottom .bottom-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+}
+main .card-allReel .reel .bottom .bottom-top img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .card-allReel .reel .bottom .bottom-top button {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+main .card-allReel .reel .bottom .bottom-bottom {
+  text-transform: capitalize;
+}
+main .card-allReel .reel .right {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+main .card-allReel .reel .right span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+main .card-allReel .reel .right span i {
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+main .card-allReel .reel .right span .red {
+  color: red;
+}
+main .card-allReel .reel .right span p {
+  pointer-events: none;
+  font-size: 1rem;
+}
+main .card-allReel::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
