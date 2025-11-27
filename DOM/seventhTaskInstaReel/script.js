@@ -143,16 +143,16 @@ if(dets.target.className === 'follow'){
 if (dets.target.className === "muted") {
     let current = Number(dets.target.id);
 
-    
+    // Agar current reel already unmuted hai → mute it
     if (reelsData[current].isMuted === false) {
 
-       
+       // only mute current, baaki pehle se hi muted hain
         reelsData[current].isMuted = true;
 
     } else {
-        
+        // Agar current muted hai → sabko mute + current unmute
         reelsData.forEach(elem => elem.isMuted = true);
-
+        // current ko unmute karo
         reelsData[current].isMuted = false;
     }
 
